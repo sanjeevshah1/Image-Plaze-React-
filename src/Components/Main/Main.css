@@ -1,0 +1,99 @@
+#not-found{
+    margin-top: 50px;
+}
+#image-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
+  .image-card {
+    font-size: 1rem;
+    height: 28.125em;
+    width: 25%;
+    margin: 0.625em;
+    margin-right: 1.25em;
+    border-radius: 0.3125em;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-card:hover {
+    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  }
+  .image-card img {
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 1.25em;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  }
+  .image-card p {
+    margin-top: 0.9615em;
+    text-align: center;
+    color: #141414;
+    font-size: 1rem;
+    font-weight: 500;
+    overflow: hidden;
+    padding: 10px;
+  }
+  .image-card button {
+    width: auto;
+    height: auto;
+    padding: 0.4166em;
+    border-radius: 0.2em;
+    background-color: inherit;
+    color: white;
+    letter-spacing: 0.166em;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  
+  .image-card {
+    position: relative;
+  }
+  
+  .image-card img {
+    transition: filter 0.5s ease;
+  }
+  
+  .image-card:hover img {
+    filter: blur(3px);
+  }
+  
+  .image-card button {
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+  
+  .image-card:hover button {
+    opacity: 1;
+  }
+  @media screen and (max-width: 700px){
+    #image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .image-card {
+      height: 400px;
+      width: 85%;
+      margin: 1.875em;
+      margin-right: 1.25em;
+      border-radius: 0.3125em;
+      display: flex;
+      flex-direction: column;
+    }
+  
+   }
